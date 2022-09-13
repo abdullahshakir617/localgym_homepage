@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym website</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<!-- this is to include external css -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    /* css reset */
+    body {
+        font-family: 'Baloo 2', cursive;
+        color: antiquewhite;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/background.jpg');
+        background-repeat:round;
+        /* background-size:auto; */
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 3px;
+        left: 26px;
+        text-align: center;
+        line-height: 14px;
+        font-size: 16px;
+
+    }
+
+    .left img {
+        width: 68px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        /* border: 2px solid rgb(200, 241, 15); */
+        display: block;
+        width: 36%;
+        margin: 3px auto;
+        top: 26px;
+        padding: 10px 10px;
+    }
+
+    .right {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 26px;
+        right: 26px;
+        ;
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+
+    }
+
+    .navbar li {
+        display: inline;
+        padding: 0px 3px;
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        /* to remove the line below the link in anchor tag*/
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(169, 202, 135);
+    }
+
+    .btn {
+        font-family: 'Baloo 2', cursive;
+        font-size: 15px;
+        margin: 0px 9px;
+        background-color: rgb(7, 7, 7);
+        padding: 3px 11px;
+        border: 2px solid rgb(128, 128, 117);
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .btn:hover {
+        background-color: rgb(66, 60, 60);
+    }
+
+    .container {
+        border: 2px solid rgb(254, 254, 255);
+        border-radius: 10px;
+        margin: 75px auto;
+        padding: 49px 74px;
+        display: inline-block;
+        width: 33%;
+        
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 100%;
+        /* margin: 2px; */
+        padding: 3px;
+        border-radius: 20px;
+        font-size: 20px;
+        margin: 5px;
+    }
+.container button{
+    width: 100%;
+    margin: 7px 10px;
+}
+    
+    
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="images/logo.jpg" alt="" id="logo">
+            <div>
+                Mommy's Gym
+            </div>
+
+
+        </div>
+        <!-- mid for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Mail Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>Congratulations !! You are in the best Gym in Delhi.</h3>
+
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your number">
+            </div>
+        <button class="btn" id="submitbutton">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
